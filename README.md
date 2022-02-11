@@ -72,11 +72,11 @@ root
 
   for NYU Depth V2
   ```
-  $ python ./code/eval_with_pngs.py --dataset nyudepthv2 --pred_path ./best_nyu_preds/ --gt_path ./datasets/nyu_depth_v2/ --max_depth_eval 10.0 
+  python ./code/eval_with_pngs.py --dataset nyudepthv2 --pred_path ./best_nyu_preds/ --gt_path ../../dataset/nyu_depth_v2/ --max_depth_eval 10.0 
   ```
   for KITTI
   ```
-  $ python ./code/eval_with_pngs.py --dataset kitti --split eigen_benchmark --pred_path ./best_kitti_preds/ --gt_path ./datasets/kitti/ --max_depth_eval 80.0 --garg_crop
+  $ python ./code/eval_with_pngs.py --dataset kitti --split eigen_benchmark --pred_path ./best_kitti_preds/ --gt_path ../../dataset/kitti_dataset/ --max_depth_eval 80.0 --garg_crop
   ```
 - Evaluate with model (NYU Depth V2)
   
