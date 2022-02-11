@@ -4,3 +4,5 @@ ckpt/
 logs/
 results/
 __pycache__/
+best_nyu_preds/
+best_kitti_preds/
