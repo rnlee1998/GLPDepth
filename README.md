@@ -76,7 +76,7 @@ root
   ```
   for KITTI
   ```
-  $ python ./code/eval_with_pngs.py --dataset kitti --split eigen_benchmark --pred_path ./best_kitti_preds/ --gt_path ../../dataset/kitti_dataset/ --max_depth_eval 80.0 --garg_crop
+  python ./code/eval_with_pngs.py --dataset kitti --split eigen_benchmark --pred_path ./best_kitti_preds/ --gt_path ../../dataset/kitti_dataset/ --max_depth_eval 80.0 --garg_crop
   ```
 - Evaluate with model (NYU Depth V2)
   
