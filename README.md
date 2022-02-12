@@ -96,6 +96,10 @@ root
      ```
     
     In case of kitti, modify arguments to `--dataset kitti --max_depth 80.0 --max_depth_eval 80.0` and add `--kitti_crop [garg_crop or eigen_crop]`
+    e.g:
+      ```
+     python ./code/test.py --dataset kitti --data_path ../../dataset/ --ckpt_dir ./ckpt/best_model_kitti.ckpt --save_eval_pngs  --max_depth 80.0 --max_depth_eval 80.0 --kitti_crop garg_crop
+      ```
 
 #### Inference
 
