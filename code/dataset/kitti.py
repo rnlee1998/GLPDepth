@@ -13,7 +13,7 @@ class kitti(BaseDataset):
         self.scale_size = scale_size
         
         self.is_train = is_train
-        self.data_path = os.path.join(data_path, 'kitti_data')
+        self.data_path = os.path.join(data_path, 'kitti_dataset')
 
         self.image_path_list = []
         self.depth_path_list = []

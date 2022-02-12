@@ -84,7 +84,6 @@ root
    - To evaluate only
      ```
      python ./code/test.py --dataset nyudepthv2 --data_path ../../dataset/ --ckpt_dir ./ckpt/best_model_nyu.ckpt --do_evaluate  --max_depth 10.0 --max_depth_eval 10.0
-
      ```
    - To save pngs for eval_with_pngs
       ```

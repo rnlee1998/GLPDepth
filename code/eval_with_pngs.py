@@ -109,7 +109,7 @@ def test():
             directory = file_dir.replace('_' + filename, '')        
 
             if args.split == 'eigen_benchmark':
-                gt_depth_path = os.path.join(args.gt_path, 'trainval', directory, 
+                gt_depth_path = os.path.join(args.gt_path, 'data_depth_annotated', 'train', directory, 
                                              'proj_depth/groundtruth/image_02', filename + '.png')
                 #print("debug:",gt_depth_path)
                 if not os.path.isfile(gt_depth_path):
