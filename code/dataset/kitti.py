@@ -13,7 +13,7 @@ class kitti(BaseDataset):
         self.scale_size = scale_size
         
         self.is_train = is_train
-        self.data_path = os.path.join(data_path, 'kitti')
+        self.data_path = os.path.join(data_path, 'kitti_data')
 
         self.image_path_list = []
         self.depth_path_list = []
@@ -48,7 +48,7 @@ class kitti(BaseDataset):
         img_path = self.data_path + self.filenames_list[idx].split(' ')[0]
         gt_path = self.data_path + self.filenames_list[idx].split(' ')[1]
         filename = img_path.split('/')[-4] + '_' + img_path.split('/')[-1]
-
+        #print("debug:",self.data_path)
         image = cv2.imread(img_path)  # [H x W x C] and C: BGR
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         depth = cv2.imread(gt_path, cv2.IMREAD_UNCHANGED).astype('float32')

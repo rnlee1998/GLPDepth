@@ -33,10 +33,14 @@ def main():
     else:
         device = torch.device('cpu')
 
-    if args.save_eval_pngs or args.save_visualize:
-        result_path = os.path.join(args.result_dir, args.exp_name)
+    if args.save_eval_pngs:
+        result_path = os.path.join(args.result_dir, args.dataset+'_'+args.exp_name)
         logging.check_and_make_dirs(result_path)
         print("Saving result images in to %s" % result_path)
+    elif args.save_visualize:
+        result_path = os.path.join(args.result_dir, args.dataset+'_visualized')
+        logging.check_and_make_dirs(result_path)
+        print("Saving result images in to %s" % result_path)        
     
     if args.do_evaluate:
         result_metrics = {}
@@ -95,6 +99,7 @@ def main():
             
         if args.save_visualize:
             save_path = os.path.join(result_path, filename[0])
+            #print(result_path,'**',filename[0])
             pred_d_numpy = pred_d.squeeze().cpu().numpy()
             pred_d_numpy = (pred_d_numpy / pred_d_numpy.max()) * 255
             pred_d_numpy = pred_d_numpy.astype(np.uint8)

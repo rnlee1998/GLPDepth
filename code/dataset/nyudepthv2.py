@@ -38,6 +38,7 @@ class nyudepthv2(BaseDataset):
         filename = img_path.split('/')[-2] + '_' + img_path.split('/')[-1]
 
         image = cv2.imread(img_path)
+        #print("debug:",image)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         depth = cv2.imread(gt_path, cv2.IMREAD_UNCHANGED).astype('float32')
 

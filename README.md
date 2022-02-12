@@ -83,16 +83,17 @@ root
   Result images will be saved in ./args.result_dir/args.exp_name (default: ./results/test)
    - To evaluate only
      ```
-     $ python ./code/test.py --dataset nyudepthv2 --data_path ./datasets/ --ckpt_dir <path_for_ckpt> --do_evaluate  --max_depth 10.0 --max_depth_eval 10.0
+     python ./code/test.py --dataset nyudepthv2 --data_path ../../dataset/ --ckpt_dir ./ckpt/best_model_nyu.ckpt --do_evaluate  --max_depth 10.0 --max_depth_eval 10.0
+
      ```
    - To save pngs for eval_with_pngs
       ```
-     $ python ./code/test.py --dataset nyudepthv2 --data_path ./datasets/ --ckpt_dir <path_for_ckpt> --save_eval_pngs  --max_depth 10.0 --max_depth_eval 10.0
+     python ./code/test.py --dataset nyudepthv2 --data_path ../../dataset/ --ckpt_dir ./ckpt/best_model_nyu.ckpt --save_eval_pngs  --max_depth 10.0 --max_depth_eval 10.0
      ```         
     
    - To save visualized depth maps
      ```
-     $ python ./code/test.py --dataset nyudepthv2 --data_path ./datasets/ --ckpt_dir <path_for_ckpt> --save_visualize  --max_depth 10.0 --max_depth_eval 10.0
+     python ./code/test.py --dataset nyudepthv2 --data_path ../../dataset/ --ckpt_dir ./ckpt/best_model_nyu.ckpt --save_visualize  --max_depth 10.0 --max_depth_eval 10.0
      ```
     
     In case of kitti, modify arguments to `--dataset kitti --max_depth 80.0 --max_depth_eval 80.0` and add `--kitti_crop [garg_crop or eigen_crop]`
