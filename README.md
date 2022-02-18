@@ -113,12 +113,15 @@ root
 
 for NYU Depth V2
   ```
-  python ./code/train.py --dataset nyudepthv2 --data_path ../../dataset/ --max_depth 10.0 --max_depth_eval 10.0
+  python ./code/train.py --dataset nyudepthv2 --data_path ../../dataset/ --save_model --max_depth 10.0 --max_depth_eval 10.0
   ```
   for KITTI
   ```
-  python ./code/train.py --dataset kitti --data_path ../../dataset/ --max_depth 80.0 --max_depth_eval 80.0  --kitti_crop garg_crop
+  python ./code/train.py --dataset kitti --data_path ../../dataset/ --save_model --max_depth 80.0 --max_depth_eval 80.0  --kitti_crop garg_crop
   ```
+  将验证集结果保存成PNG图片--save_result
+
+  保存模型--save_model
 
 ### To-Do
 - [x] Add inference 
