@@ -117,7 +117,7 @@ for NYU Depth V2
   ```
   for KITTI
   ```
-  $ python ./code/train.py --dataset kitti --data_path ../../dataset/ --max_depth 80.0 --max_depth_eval 80.0  --kitti_crop garg_crop
+  python ./code/train.py --dataset kitti --data_path ../../dataset/ --max_depth 80.0 --max_depth_eval 80.0  --kitti_crop garg_crop
   ```
 
 ### To-Do
